@@ -1,7 +1,7 @@
 <?php
 /**
- * API Endpoint: CV Data & Statistics
- * Mengembalikan data profil dan statistik secara dinamis dalam format JSON
+ * API Endpoint: CV Data & Profil
+ * Mengembalikan data profil dan riwayat Ahmad Rizqi Maulana dalam format JSON
  */
 
 header('Content-Type: application/json; charset=UTF-8');
@@ -9,20 +9,33 @@ header('Access-Control-Allow-Origin: *');
 
 $cvData = [
     'personal' => [
-        'name' => 'Rizqi Maulana',
-        'title' => 'Full Stack Web Developer & Software Engineer',
-        'location' => 'Indonesia',
-        'email' => 'rizqi.maulana.dev@example.com',
-        'phone' => '+62 812-3456-7890',
-        'github' => 'https://github.com/rizqimaulana',
-        'linkedin' => 'https://linkedin.com/in/rizqimaulana',
-        'status' => 'Terbuka untuk Peluang Kerja & Kolaborasi'
+        'name' => 'Ahmad Rizqi Maulana',
+        'title' => 'Mahasiswa Informatika UMM & Web Developer',
+        'location' => 'Malang, Jawa Timur, Indonesia',
+        'email' => 'ahmadrizqimaulanaa@webmail.umm.ac.id',
+        'phone' => '085337659146',
+        'linkedin' => 'https://www.linkedin.com/in/ahmad-rizqi-maulana-8b0a80327',
+        'status' => 'Mahasiswa Aktif S1 Informatika UMM'
     ],
-    'statistics' => [
-        'years_experience' => '2+',
-        'completed_projects' => '15+',
-        'satisfied_clients' => '10+',
-        'certifications' => '8+'
+    'education' => [
+        [
+            'institution' => 'Universitas Muhammadiyah Malang (UMM)',
+            'degree' => 'S1 Teknik Informatika',
+            'period' => '2024 — Sekarang (Masuk 2024)'
+        ],
+        [
+            'institution' => 'SMK Negeri 1 Wadeng',
+            'degree' => 'Pendidikan Menengah Kejuruan (Pendidikan Terakhir)',
+            'period' => '2021 — 2024 (Lulus 2024)'
+        ]
+    ],
+    'experience' => [
+        [
+            'company' => 'PT. Eastern Logistik',
+            'role' => 'Peserta Magang Industri (Internship)',
+            'period' => 'Agustus 2022 — Februari 2023 (6 Bulan)',
+            'description' => 'Praktik kerja industri selama 6 bulan di PT. Eastern Logistik.'
+        ]
     ],
     'server_info' => [
         'php_version' => PHP_VERSION,

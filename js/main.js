@@ -1,6 +1,6 @@
 /**
  * ====================================================================
- * CV Pribadi - Rizqi Maulana
+ * CV Pribadi - Ahmad Rizqi Maulana
  * File: js/main.js
  * Rubrik: 20% JS (Typewriter, Scroll Spy, Back-to-Top, Mobile Menu)
  * ====================================================================
@@ -14,11 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ------------------------------------------------------------------
   const typeTextElement = document.getElementById('typing-text');
   const titles = [
-    'Full Stack Web Developer',
-    'Software Engineer',
-    'Frontend & Backend Specialist',
-    'Informatics Student',
-    'Problem Solver & Tech Enthusiast'
+    'Mahasiswa Informatika UMM',
+    'Web Developer Enthusiast',
+    'Alumni SMKN 1 Wadeng',
+    'Ex-Intern PT. Eastern Logistik'
   ];
 
   let titleIndex = 0;
@@ -173,10 +172,10 @@ document.addEventListener('DOMContentLoaded', () => {
   async function checkBackendEngine() {
     if (!backendBadge) return;
 
-    // Coba deteksi PHP atau Node.js
+    // Coba deteksi Vercel Serverless, Node.js, atau PHP
     const endpoints = [
-      { url: 'api/contact.php', name: 'PHP 8.1 Backend' },
-      { url: '/api/contact', name: 'Node.js Backend' }
+      { url: '/api/contact', name: 'Cloud Serverless / Node.js Backend' },
+      { url: 'api/contact.php', name: 'PHP 8.1 Backend' }
     ];
 
     for (const ep of endpoints) {
@@ -204,3 +203,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
   checkBackendEngine();
 });
+

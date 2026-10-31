@@ -129,3 +129,4 @@ echo json_encode([
     'status' => 'error',
     'message' => 'Metode HTTP tidak diizinkan.'
 ]);
+

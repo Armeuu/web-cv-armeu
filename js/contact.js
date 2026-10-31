@@ -114,12 +114,13 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     try {
-      // Coba kirim ke endpoint backend: api/contact.php atau /api/contact (Node.js)
-      let endpoint = 'api/contact.php';
-      
-      // Jika berjalan di port Node.js lokal tanpa ekstensi PHP
-      if (window.location.port === '3000') {
-        endpoint = '/api/contact';
+      // Tentukan endpoint backend sesuai environment (Vercel, Node.js, atau PHP)
+      let endpoint = '/api/contact';
+      if (window.location.protocol === 'file:') {
+        throw new Error('OFFLINE_MODE');
+      }
+      if (window.location.port === '8000' || window.location.pathname.endsWith('.php')) {
+        endpoint = 'api/contact.php';
       }
 
       let response;
@@ -164,3 +165,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
