@@ -2,8 +2,8 @@
   "name": "web-cv-pribadi",
   "version": "1.0.0",
   "description": "Website CV Pribadi Interaktif dan Responsif karya Ahmad Rizqi Maulana (Informatika UMM)",
-  "main": "server.js",
   "scripts": {
+    "build": "echo 'Build OK'",
     "start": "node server.js",
     "dev": "node server.js",
     "serve:php": "php -S localhost:8000",
@@ -23,4 +23,3 @@
   "author": "Ahmad Rizqi Maulana",
   "license": "MIT"
 }
-

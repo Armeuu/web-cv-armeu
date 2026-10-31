@@ -1,4 +1,18 @@
 {
   "version": 2,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    {
+      "source": "/api/contact",
+      "destination": "/api/contact.js"
+    },
+    {
+      "source": "/api/data",
+      "destination": "/api/data.js"
+    },
+    {
+      "source": "/((?!api|css|js|assets).*)",
+      "destination": "/index.html"
+    }
+  ]
 }
