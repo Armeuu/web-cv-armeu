@@ -4,78 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <!-- SEO & Metadata -->
   <title>Curriculum Vitae — Ahmad Rizqi Maulana</title>
   <meta name="description" content="Curriculum Vitae profesional Ahmad Rizqi Maulana. Mahasiswa Teknik Informatika Universitas Muhammadiyah Malang (UMM) dan Web Developer.">
   <meta name="keywords" content="Ahmad Rizqi Maulana, CV, Resume, Informatika UMM, Web Developer, HTML5, CSS3, JavaScript, PHP">
   <meta name="author" content="Ahmad Rizqi Maulana">
-  
-  <!-- Open Graph / Social Media -->
   <meta property="og:title" content="Curriculum Vitae — Ahmad Rizqi Maulana">
   <meta property="og:description" content="Profil profesional, riwayat pendidikan, pengalaman magang industri, dan keahlian teknis Ahmad Rizqi Maulana.">
   <meta property="og:type" content="profile">
   <meta property="og:url" content="http://localhost:3000">
-
-  <!-- Favicon SVG Data URI -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
-
-  <!-- Google Fonts: Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-
-  <!-- Stylesheets (Rubrik: 30% CSS) -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/print.css" media="print">
 </head>
 <body>
-
-  <!-- ================================================================
-       1. HEADER & NAVBAR (Rubrik: 30% HTML, 30% CSS, 20% JS)
-       ================================================================ -->
   <header class="site-header" role="banner">
     <div class="container nav-container">
-      <!-- Brand Logo -->
       <a href="#hero" class="brand-logo" aria-label="Beranda CV Ahmad Rizqi Maulana">
         <span class="brand-icon" aria-hidden="true">ARM</span>
         <span>Ahmad Rizqi Maulana</span>
       </a>
-
-      <!-- Navigation Links -->
       <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Menu Navigasi Utama">
         <a href="#tentang" class="nav-link">Tentang</a>
         <a href="#pengalaman" class="nav-link">Pengalaman &amp; Pendidikan</a>
         <a href="#keahlian" class="nav-link">Keahlian</a>
         <a href="#kontak" class="nav-link">Kontak</a>
       </nav>
-
-      <!-- Action Buttons: Theme Toggle, Print CV, Mobile Toggle -->
       <div class="nav-actions">
-        <!-- Theme Toggle Button -->
         <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Ganti Tema Tampilan" title="Ganti Mode Gelap/Terang">
-          <!-- Ikon SVG diatur dinamis oleh theme.js -->
         </button>
-
-        <!-- Print CV Button -->
         <button type="button" class="btn btn-outline btn-sm btn-print-cv" aria-label="Cetak CV atau Ekspor ke PDF" title="Cetak CV / Simpan PDF">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
           <span>Cetak CV</span>
         </button>
-
-        <!-- Mobile Hamburger Toggle -->
         <button type="button" class="nav-toggle-btn" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka Menu Navigasi">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
       </div>
     </div>
   </header>
-
-  <!-- ================================================================
-       HEADER RESUME KHUSUS CETAK (@media print)
-       ================================================================ -->
   <aside class="print-only" style="display: none;" aria-label="Header Resume Versi Cetak">
     <div style="border-bottom: 2px solid #111827; padding-bottom: 12px; margin-bottom: 16px;">
       <h1 style="font-size: 24pt; margin: 0; color: #111827;">Ahmad Rizqi Maulana</h1>
@@ -88,42 +59,27 @@
       </div>
     </div>
   </aside>
-
-  <!-- ================================================================
-       MAIN CONTENT CONTAINER
-       ================================================================ -->
   <main id="main-content">
-
-    <!-- --------------------------------------------------------------
-         SECTION 1: HERO / PROFILE OVERVIEW
-         -------------------------------------------------------------- -->
     <section class="hero-section" id="hero" aria-labelledby="hero-title">
       <div class="container">
         <div class="hero-grid">
-          
-          <!-- Hero Text Content -->
           <div class="hero-content reveal">
             <div class="hero-status-pill">
               <span class="status-dot" aria-hidden="true"></span>
               <span>Mahasiswa Aktif Informatika — Universitas Muhammadiyah Malang</span>
             </div>
-
             <h1 class="hero-title" id="hero-title">
               Halo, Saya <br>
               <span class="gradient-text">Ahmad Rizqi Maulana</span>
             </h1>
-
             <div class="hero-subtitle" aria-live="polite">
               <span>Fokus pada </span>
               <span id="typing-text" style="color: var(--primary-600); font-weight: 700;">Mahasiswa Informatika UMM</span>
               <span class="typing-cursor" aria-hidden="true"></span>
             </div>
-
             <p class="hero-bio">
               Mahasiswa S1 Teknik Informatika di Universitas Muhammadiyah Malang (UMM) angkatan 2024 dengan latar belakang kejuruan SMK Negeri 1 Wadeng serta pengalaman magang industri di PT. Eastern Logistik. Berkomitmen mendalami pengembangan web modern, rekayasa perangkat lunak, dan pemecahan masalah komputasional.
             </p>
-
-            <!-- Call to Actions -->
             <div class="hero-cta-group">
               <a href="#kontak" class="btn btn-primary">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -138,8 +94,6 @@
                 <span>Unduh / Cetak CV</span>
               </button>
             </div>
-
-            <!-- Social Media Profiles -->
             <div class="social-links" aria-label="Media Sosial dan Kontak">
               <a href="https://www.linkedin.com/in/ahmad-rizqi-maulana-8b0a80327?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Profil LinkedIn Ahmad Rizqi Maulana" title="LinkedIn">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -152,8 +106,6 @@
               </a>
             </div>
           </div>
-
-          <!-- Hero Avatar Profile Card dengan Foto Asli -->
           <div class="hero-avatar-wrapper reveal reveal-delay-2">
             <figure class="avatar-card">
               <div class="avatar-image-container">
@@ -171,27 +123,17 @@
               </figcaption>
             </figure>
           </div>
-
         </div>
-
       </div>
     </section>
-
-    <!-- --------------------------------------------------------------
-         SECTION 2: ABOUT ME / TENTANG SAYA
-         -------------------------------------------------------------- -->
     <section class="section section-alt" id="tentang" aria-labelledby="about-title">
       <div class="container">
-        
         <header class="section-header reveal">
           <span class="section-tag">Profil Diri</span>
           <h2 class="section-title" id="about-title">Tentang Saya</h2>
           <p class="section-description">Mengenal latar belakang pendidikan, pengalaman praktik industri, dan antusiasme dalam bidang rekayasa teknologi informasi.</p>
         </header>
-
         <div class="about-grid">
-          
-          <!-- Narrative Bio Card -->
           <article class="about-card reveal">
             <h3>Dedikasi Akademik &amp; Kesiapan Kerja</h3>
             <p class="about-text">
@@ -200,7 +142,6 @@
             <p class="about-text">
               Saya memiliki pengalaman kerja nyata melalui program <strong>magang industri selama 6 bulan di PT. Eastern Logistik</strong> (Agustus 2022 — Februari 2023). Pengalaman tersebut mengasah kedisiplinan kerja profesional, kemampuan komunikasi, manajemen operasional berbasis sistem digital, serta kerja sama tim dalam lingkungan industri.
             </p>
-
             <div class="values-list">
               <div class="value-item">
                 <span class="value-icon" aria-hidden="true">🎓</span>
@@ -232,33 +173,24 @@
               </div>
             </div>
           </article>
-
-          <!-- Personal Information Definition List -->
           <aside class="about-card reveal reveal-delay-2" aria-labelledby="data-pribadi-title">
             <h3 id="data-pribadi-title">Informasi Pribadi</h3>
             <dl class="info-dl">
               <dt class="info-dt">Nama Lengkap</dt>
               <dd class="info-dd">Ahmad Rizqi Maulana</dd>
-
               <dt class="info-dt">Status</dt>
               <dd class="info-dd"><span class="badge" style="background: rgba(16, 185, 129, 0.15); color: #059669; border-color: rgba(16, 185, 129, 0.3);">Mahasiswa Aktif UMM</span></dd>
-
               <dt class="info-dt">Perguruan Tinggi</dt>
               <dd class="info-dd">Universitas Muhammadiyah Malang (UMM)</dd>
-
               <dt class="info-dt">Program Studi</dt>
               <dd class="info-dd">S1 Teknik Informatika (2024 — Sekarang)</dd>
-
               <dt class="info-dt">Pendidikan Menengah</dt>
               <dd class="info-dd">SMK Negeri 1 Wadeng (2021 — 2024)</dd>
-
               <dt class="info-dt">Email Kampus</dt>
               <dd class="info-dd"><a href="mailto:ahmadrizqimaulanaa@webmail.umm.ac.id" style="word-break: break-all;">ahmadrizqimaulanaa@webmail.umm.ac.id</a></dd>
-
               <dt class="info-dt">Nomor Telepon</dt>
               <dd class="info-dd"><a href="https://wa.me/6285337659146" target="_blank" rel="noopener noreferrer">085337659146</a></dd>
             </dl>
-
             <div style="margin-top: 2rem;">
               <button type="button" class="btn btn-primary btn-sm btn-print-cv" style="width: 100%;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
@@ -266,38 +198,23 @@
               </button>
             </div>
           </aside>
-
         </div>
-
       </div>
     </section>
-
-    <!-- --------------------------------------------------------------
-         SECTION 3: EDUCATION & WORK EXPERIENCE (TIMELINE)
-         Pengalaman: HANYA Magang PT. Eastern Logistik (Agustus 2022 - Feb 2023)
-         Pendidikan: UMM Informatika (2024-Sekarang) & SMKN 1 Wadeng (2021-2024)
-         -------------------------------------------------------------- -->
     <section class="section" id="pengalaman" aria-labelledby="experience-title">
       <div class="container">
-        
         <header class="section-header reveal">
           <span class="section-tag">Jejak Langkah</span>
           <h2 class="section-title" id="experience-title">Pendidikan &amp; Pengalaman</h2>
           <p class="section-description">Rekam jejak akademis formal dan pengalaman kerja magang industri yang telah ditempuh.</p>
         </header>
-
-        <!-- Category Tab Buttons -->
         <div class="timeline-tabs reveal">
           <button type="button" class="tab-btn active" data-target="all">Semua Riwayat</button>
           <button type="button" class="tab-btn" data-target="group-work">Pengalaman Magang</button>
           <button type="button" class="tab-btn" data-target="group-edu">Pendidikan Formal</button>
         </div>
-
         <div class="timeline">
-
-          <!-- Sub-Grup: Pengalaman Kerja Magang -->
           <div class="timeline-group" id="group-work">
-            
             <article class="timeline-item reveal">
               <div class="timeline-dot" aria-hidden="true"></div>
               <div class="timeline-content">
@@ -317,13 +234,8 @@
                 </ul>
               </div>
             </article>
-
           </div>
-
-          <!-- Sub-Grup: Pendidikan -->
           <div class="timeline-group" id="group-edu">
-
-            <!-- UMM Informatika -->
             <article class="timeline-item reveal reveal-delay-1">
               <div class="timeline-dot" aria-hidden="true"></div>
               <div class="timeline-content">
@@ -342,8 +254,6 @@
                 </ul>
               </div>
             </article>
-
-            <!-- SMK Negeri 1 Wadeng -->
             <article class="timeline-item reveal reveal-delay-2">
               <div class="timeline-dot" aria-hidden="true"></div>
               <div class="timeline-content">
@@ -362,36 +272,23 @@
                 </ul>
               </div>
             </article>
-
           </div>
-
         </div>
-
       </div>
     </section>
-
-    <!-- --------------------------------------------------------------
-         SECTION 4: SKILLS & COMPETENCIES (Rubrik: 30% HTML, 30% CSS)
-         -------------------------------------------------------------- -->
     <section class="section section-alt" id="keahlian" aria-labelledby="skills-title">
       <div class="container">
-        
         <header class="section-header reveal">
           <span class="section-tag">Kompetensi Teknis</span>
           <h2 class="section-title" id="skills-title">Keahlian &amp; Kemampuan</h2>
           <p class="section-description">Kombinasi keahlian teknis pemrograman web dan soft skills yang dikembangkan melalui pendidikan dan pengalaman lapangan.</p>
         </header>
-
         <div class="grid grid-cols-2">
-          
-          <!-- Category 1: Frontend Development -->
           <div class="skills-category-card reveal">
             <h3 class="skills-category-title">
               <span class="skills-category-icon" aria-hidden="true">🎨</span>
               <span>Frontend Engineering</span>
             </h3>
-
-            <!-- Skill Item: HTML5 -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">HTML5 (Semantik &amp; Aksesibilitas WCAG)</span>
@@ -401,8 +298,6 @@
                 <div class="skill-progress-fill" style="width: 95%;"></div>
               </div>
             </div>
-
-            <!-- Skill Item: CSS3 -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">CSS3 (Grid, Flexbox, Animations, Responsive)</span>
@@ -412,8 +307,6 @@
                 <div class="skill-progress-fill" style="width: 90%;"></div>
               </div>
             </div>
-
-            <!-- Skill Item: JavaScript -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">JavaScript Modern (ES6+, DOM, Fetch API, Async)</span>
@@ -423,8 +316,6 @@
                 <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
             </div>
-
-            <!-- Skill Item: Responsive Design -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">Responsive Web Design &amp; Mobile Optimization</span>
@@ -435,15 +326,11 @@
               </div>
             </div>
           </div>
-
-          <!-- Category 2: Backend & Database -->
           <div class="skills-category-card reveal reveal-delay-1">
             <h3 class="skills-category-title">
               <span class="skills-category-icon" aria-hidden="true">⚙️</span>
               <span>Backend &amp; Basis Data</span>
             </h3>
-
-            <!-- Skill Item: PHP -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">PHP (Pemrograman Web Dinamis &amp; Form Handling)</span>
@@ -453,8 +340,6 @@
                 <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
             </div>
-
-            <!-- Skill Item: Node.js -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">Node.js Environment &amp; HTTP Services</span>
@@ -464,8 +349,6 @@
                 <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>
             </div>
-
-            <!-- Skill Item: MySQL / Database -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">Database Relasional &amp; SQL Query Dasar</span>
@@ -475,8 +358,6 @@
                 <div class="skill-progress-fill" style="width: 82%;"></div>
               </div>
             </div>
-
-            <!-- Skill Item: JSON & REST API -->
             <div class="skill-bar-item">
               <div class="skill-meta">
                 <span class="skill-name">JSON Data Handling &amp; Validasi Input Server</span>
@@ -487,14 +368,11 @@
               </div>
             </div>
           </div>
-
-          <!-- Category 3: Tools & Development Workflow -->
           <div class="skills-category-card reveal">
             <h3 class="skills-category-title">
               <span class="skills-category-icon" aria-hidden="true">🛠️</span>
               <span>Tools &amp; Workflow Development</span>
             </h3>
-
             <div class="avatar-meta-tags" style="justify-content: flex-start; gap: 0.65rem;">
               <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Git &amp; GitHub</span>
               <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Visual Studio Code</span>
@@ -504,14 +382,11 @@
               <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Terminal / PowerShell</span>
             </div>
           </div>
-
-          <!-- Category 4: Soft Skills & Profesionalisme -->
           <div class="skills-category-card reveal reveal-delay-1">
             <h3 class="skills-category-title">
               <span class="skills-category-icon" aria-hidden="true">🤝</span>
               <span>Soft Skills &amp; Nilai Profesional</span>
             </h3>
-
             <div class="avatar-meta-tags" style="justify-content: flex-start; gap: 0.65rem;">
               <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Kedisiplinan &amp; Manajemen Waktu</span>
               <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Kerja Sama Tim &amp; Kolaborasi</span>
@@ -521,32 +396,18 @@
               <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Ketelitian Administrasi &amp; Kode</span>
             </div>
           </div>
-
         </div>
-
       </div>
     </section>
-
-    <!-- --------------------------------------------------------------
-         SECTION 5: CONTACT FORM & INFORMATION
-         Rubrik: 30% HTML (Form, Fieldset, Inputs), 20% JS (Validation, Fetch),
-                 10% Bahasa Pemrograman Lain (PHP Backend Handler)
-         -------------------------------------------------------------- -->
     <section class="section" id="kontak" aria-labelledby="contact-title">
       <div class="container">
-        
         <header class="section-header reveal">
           <span class="section-tag">Komunikasi Langsung</span>
           <h2 class="section-title" id="contact-title">Hubungi Saya</h2>
           <p class="section-description">Silakan hubungi saya untuk keperluan akademik, peluang magang, proyek rekayasa perangkat lunak, maupun kolaborasi melalui kanal berikut.</p>
         </header>
-
         <div class="contact-grid">
-          
-          <!-- Contact Direct Channels -->
           <div class="contact-info-list reveal">
-            
-            <!-- Email -->
             <div class="contact-info-item">
               <div class="contact-info-icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -556,8 +417,6 @@
                 <a href="mailto:ahmadrizqimaulanaa@webmail.umm.ac.id" class="contact-info-value">ahmadrizqimaulanaa@webmail.umm.ac.id</a>
               </div>
             </div>
-
-            <!-- WhatsApp / Phone -->
             <div class="contact-info-item">
               <div class="contact-info-icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
@@ -567,8 +426,6 @@
                 <a href="https://wa.me/6285337659146" target="_blank" rel="noopener noreferrer" class="contact-info-value">085337659146</a>
               </div>
             </div>
-
-            <!-- LinkedIn -->
             <div class="contact-info-item">
               <div class="contact-info-icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -578,8 +435,6 @@
                 <a href="https://www.linkedin.com/in/ahmad-rizqi-maulana-8b0a80327?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="contact-info-value" style="word-break: break-all;">Ahmad Rizqi Maulana</a>
               </div>
             </div>
-
-            <!-- Location -->
             <div class="contact-info-item">
               <div class="contact-info-icon" aria-hidden="true">
                 <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
@@ -589,79 +444,48 @@
                 <div class="contact-info-value">Malang, Jawa Timur, Indonesia</div>
               </div>
             </div>
-
           </div>
-
-          <!-- Interactive Contact Form -->
           <div class="contact-form-card reveal reveal-delay-1">
             <form id="contact-form" novalidate aria-label="Formulir Kontak Pribadi">
-              
-              <!-- Status Alert Banner -->
               <div id="contact-alert" class="form-status-alert" role="alert" aria-live="assertive"></div>
-
-              <!-- Input: Nama Lengkap -->
               <div class="form-group">
                 <label for="contact-name" class="form-label">Nama Lengkap <span style="color: var(--danger);">*</span></label>
                 <input type="text" id="contact-name" name="name" class="form-input" placeholder="Misal: Budi Santoso" required minlength="3" autocomplete="name">
                 <div id="name-error" class="form-error-msg" aria-live="polite"></div>
               </div>
-
-              <!-- Input: Email -->
               <div class="form-group">
                 <label for="contact-email" class="form-label">Alamat Email <span style="color: var(--danger);">*</span></label>
                 <input type="email" id="contact-email" name="email" class="form-input" placeholder="nama@instansi.com" required autocomplete="email">
                 <div id="email-error" class="form-error-msg" aria-live="polite"></div>
               </div>
-
-              <!-- Input: Subjek -->
               <div class="form-group">
                 <label for="contact-subject" class="form-label">Subjek Pesan <span style="color: var(--danger);">*</span></label>
                 <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Keperluan Diskusi / Kolaborasi" required minlength="3">
                 <div id="subject-error" class="form-error-msg" aria-live="polite"></div>
               </div>
-
-              <!-- Input: Pesan -->
               <div class="form-group">
                 <label for="contact-message" class="form-label">Isi Pesan <span style="color: var(--danger);">*</span></label>
                 <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tuliskan pesan Anda di sini (minimal 10 karakter)..." required minlength="10"></textarea>
                 <div id="message-error" class="form-error-msg" aria-live="polite"></div>
               </div>
-
-              <!-- Tombol Kirim -->
               <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                 <span>Kirim Pesan Sekarang</span>
               </button>
-
             </form>
           </div>
-
         </div>
-
       </div>
     </section>
-
   </main>
-
-  <!-- ================================================================
-       BACK TO TOP FLOATING BUTTON
-       ================================================================ -->
   <button type="button" class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman" title="Ke Atas">
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
   </button>
-
-  <!-- ================================================================
-       FOOTER (Rubrik: 30% HTML)
-       ================================================================ -->
   <footer class="site-footer" role="contentinfo">
     <div class="container footer-content">
       <p>&copy; 2024 — 2026 <strong>Ahmad Rizqi Maulana</strong> — Teknik Informatika UMM.</p>
     </div>
   </footer>
-
-  <!-- ================================================================
-       SCRIPTS (Rubrik: 20% JS)
-       ================================================================ -->
   <script src="js/theme.js"></script>
   <script src="js/filter.js"></script>
   <script src="js/contact.js"></script>

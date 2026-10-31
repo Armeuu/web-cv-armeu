@@ -1,12 +1,6 @@
 <?php
-/**
- * API Endpoint: CV Data & Profil
- * Mengembalikan data profil dan riwayat Ahmad Rizqi Maulana dalam format JSON
- */
-
 header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *');
-
 $cvData = [
     'personal' => [
         'name' => 'Ahmad Rizqi Maulana',
@@ -43,7 +37,6 @@ $cvData = [
         'system' => PHP_OS
     ]
 ];
-
 echo json_encode([
     'status' => 'success',
     'data' => $cvData

@@ -1,27 +1,14 @@
-/**
- * ====================================================================
- * CV Pribadi - Rizqi Maulana
- * File: css/print.css
- * Rubrik: 30% CSS (Print Media Stylesheet for Resume / CV Export)
- * ====================================================================
- */
-
 @media print {
-  /* 1. Pengaturan Halaman Cetak */
   @page {
     size: A4 portrait;
     margin: 1.2cm 1.5cm;
   }
-
-  /* Reset Warna & Latar Belakang untuk Cetak Hemat Tinta */
   html, body {
     background: #ffffff !important;
     color: #111827 !important;
     font-size: 10.5pt !important;
     line-height: 1.4 !important;
   }
-
-  /* 2. Sembunyikan Elemen Interaktif Web */
   .site-header,
   .nav-actions,
   .theme-toggle-btn,
@@ -38,34 +25,26 @@
   .typing-cursor {
     display: none !important;
   }
-
-  /* 3. Tampilkan Banner Cetak Header Resume Khusus */
   .print-only {
     display: block !important;
   }
-
-  /* Pastikan elemen non-interaktif tampil optimal */
   .container {
     max-width: 100% !important;
     padding: 0 !important;
     margin: 0 !important;
   }
-
   .section {
     padding: 1rem 0 !important;
     border-bottom: 1px solid #e5e7eb;
     page-break-inside: avoid;
   }
-
   .section-alt {
     background: transparent !important;
   }
-
   .section-header {
     text-align: left !important;
     margin-bottom: 1rem !important;
   }
-
   .section-title {
     font-size: 14pt !important;
     border-bottom: 2px solid #374151;
@@ -73,18 +52,14 @@
     margin-bottom: 0.75rem !important;
     color: #111827 !important;
   }
-
   .section-tag, .section-description {
     display: none !important;
   }
-
-  /* Hero Section saat dicetak */
   .hero-section {
     padding: 0 0 1rem 0 !important;
     border-bottom: 2px solid #111827;
     margin-bottom: 1rem;
   }
-
   .hero-grid {
     display: flex !important;
     flex-direction: row;
@@ -92,29 +67,24 @@
     align-items: center;
     gap: 1.5rem;
   }
-
   .hero-title {
     font-size: 20pt !important;
     color: #111827 !important;
     margin-bottom: 0.25rem !important;
   }
-
   .hero-title .gradient-text {
     background: none !important;
     -webkit-text-fill-color: #111827 !important;
     color: #111827 !important;
   }
-
   .hero-subtitle {
     font-size: 12pt !important;
     color: #4b5563 !important;
     margin-bottom: 0.5rem !important;
   }
-
   .hero-avatar-wrapper {
     display: none !important;
   }
-
   .print-contact-bar {
     display: flex !important;
     flex-wrap: wrap;
@@ -123,113 +93,85 @@
     color: #4b5563;
     margin-top: 0.5rem;
   }
-
-  /* Card and Grids */
   .grid, .grid-cols-2, .grid-cols-3, .grid-cols-4, .stats-bar {
     display: block !important;
   }
-
   .stats-bar {
     display: none !important;
   }
-
   .about-grid {
     display: block !important;
   }
-
   .about-card, .skills-category-card, .project-card, .cert-card, .timeline-content {
     box-shadow: none !important;
     border: none !important;
     padding: 0.5rem 0 !important;
     background: transparent !important;
   }
-
-  /* Timeline */
   .timeline {
     padding-left: 0 !important;
   }
-
   .timeline::before, .timeline-dot {
     display: none !important;
   }
-
   .timeline-item {
     margin-bottom: 1rem !important;
     page-break-inside: avoid;
   }
-
   .timeline-header {
     margin-bottom: 0.25rem !important;
   }
-
   .timeline-role {
     font-size: 11pt !important;
     font-weight: bold;
   }
-
   .timeline-time {
     background: none !important;
     padding: 0 !important;
     color: #4b5563 !important;
     font-size: 9pt !important;
   }
-
-  /* Skills */
   .skill-progress-track {
     display: none !important;
   }
-
   .skill-bar-item {
     display: inline-block;
     margin-right: 0.75rem;
     margin-bottom: 0.5rem !important;
   }
-
   .skill-meta {
     display: inline-flex;
     gap: 0.25rem;
     font-size: 9pt !important;
   }
-
-  /* Projects */
   .project-thumbnail {
     display: none !important;
   }
-
   .project-card {
     margin-bottom: 1rem;
     page-break-inside: avoid;
   }
-
   .project-title {
     font-size: 11pt !important;
   }
-
   .project-summary {
     font-size: 9.5pt !important;
     margin-bottom: 0.25rem !important;
   }
-
-  /* Contact info */
   .contact-grid {
     display: block !important;
   }
-
   .contact-info-list {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     gap: 0.5rem;
   }
-
   .contact-info-item {
     border: none !important;
     padding: 0 !important;
     background: transparent !important;
   }
-
-  /* Cegah tautan mencetak URL panjang secara acak */
   a[href]::after {
     content: "" !important;
   }
 }
-
