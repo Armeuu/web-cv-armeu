@@ -32,7 +32,7 @@ Proyek aplikasi web Curriculum Vitae (CV) pribadi yang interaktif, modern, respo
 ```text
 WEB tugas/
 ├── index.html              # Halaman utama dengan HTML5 Semantik
-├── server.js               # Backend server alternatif menggunakan Node.js
+├── local-server.js         # Backend server lokal menggunakan Node.js
 ├── package.json            # Konfigurasi proyek & skrip npm
 ├── .gitignore              # Pengecualian berkas git
 ├── README.md               # Dokumentasi proyek lengkap
