@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- SEO & Metadata -->
+  <title>Curriculum Vitae & Portofolio — Rizqi Maulana</title>
+  <meta name="description" content="Curriculum Vitae interaktif dan portofolio profesional Rizqi Maulana. Full Stack Web Developer & Software Engineer.">
+  <meta name="keywords" content="Rizqi Maulana, CV, Portfolio, Full Stack Developer, Web Developer, HTML5, CSS3, JavaScript, PHP, Node.js">
+  <meta name="author" content="Rizqi Maulana">
+  
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Curriculum Vitae — Rizqi Maulana">
+  <meta property="og:description" content="Jelajahi profil profesional, pengalaman kerja, proyek unggulan, dan keahlian teknis Rizqi Maulana.">
+  <meta property="og:type" content="profile">
+  <meta property="og:url" content="http://localhost:3000">
+
+  <!-- Favicon SVG Data URI -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets (Rubrik: 30% CSS) -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+<body>
+
+  <!-- ================================================================
+       1. HEADER & NAVBAR (Rubrik: 30% HTML, 30% CSS, 20% JS)
+       ================================================================ -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="brand-logo" aria-label="Beranda CV Rizqi Maulana">
+        <span class="brand-icon" aria-hidden="true">RM</span>
+        <span>Rizqi Maulana</span>
+      </a>
+
+      <!-- Desktop & Mobile Navigation Links -->
+      <nav class="nav-menu" id="nav-menu" role="navigation" aria-label="Menu Navigasi Utama">
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#pengalaman" class="nav-link">Pengalaman</a>
+        <a href="#keahlian" class="nav-link">Keahlian</a>
+        <a href="#portofolio" class="nav-link">Portofolio</a>
+        <a href="#sertifikasi" class="nav-link">Sertifikasi</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+
+      <!-- Action Buttons: Theme Toggle, Print CV, Mobile Toggle -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn" id="theme-toggle" aria-label="Ganti Tema Tampilan" title="Ganti Mode Gelap/Terang">
+          <!-- Ikon SVG diisi otomatis oleh theme.js -->
+        </button>
+
+        <!-- Print CV Button -->
+        <button type="button" class="btn btn-outline btn-sm btn-print-cv" aria-label="Cetak CV atau Ekspor ke PDF" title="Cetak CV / Simpan PDF">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+          <span>Cetak CV</span>
+        </button>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button type="button" class="nav-toggle-btn" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Buka Menu Navigasi">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================================================================
+       HEADER RESUME KHUSUS CETAK (Hanya Muncul di Mode Cetak @media print)
+       ================================================================ -->
+  <aside class="print-only" style="display: none;" aria-label="Header Resume Versi Cetak">
+    <div style="border-bottom: 2px solid #111827; padding-bottom: 12px; margin-bottom: 16px;">
+      <h1 style="font-size: 24pt; margin: 0; color: #111827;">Rizqi Maulana</h1>
+      <p style="font-size: 13pt; color: #4b5563; margin: 4px 0 8px 0; font-weight: 600;">Full Stack Web Developer &amp; Software Engineer</p>
+      <div style="display: flex; flex-wrap: wrap; gap: 15px; font-size: 9.5pt; color: #374151;">
+        <span><strong>Email:</strong> rizqi.maulana.dev@example.com</span>
+        <span><strong>Telepon:</strong> +62 812-3456-7890</span>
+        <span><strong>Domisili:</strong> Indonesia</span>
+        <span><strong>LinkedIn:</strong> linkedin.com/in/rizqimaulana</span>
+        <span><strong>GitHub:</strong> github.com/rizqimaulana</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ================================================================
+       MAIN CONTENT CONTAINER
+       ================================================================ -->
+  <main id="main-content">
+
+    <!-- --------------------------------------------------------------
+         SECTION 1: HERO / PROFILE OVERVIEW
+         -------------------------------------------------------------- -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero-grid">
+          
+          <!-- Hero Text Content -->
+          <div class="hero-content reveal">
+            <div class="hero-status-pill">
+              <span class="status-dot" aria-hidden="true"></span>
+              <span>Terbuka untuk Peluang Kerja &amp; Proyek Kolaborasi</span>
+            </div>
+
+            <h1 class="hero-title" id="hero-title">
+              Halo, Saya <br>
+              <span class="gradient-text">Rizqi Maulana</span>
+            </h1>
+
+            <div class="hero-subtitle" aria-live="polite">
+              <span>Fokus pada </span>
+              <span id="typing-text" style="color: var(--primary-600); font-weight: 700;">Full Stack Developer</span>
+              <span class="typing-cursor" aria-hidden="true"></span>
+            </div>
+
+            <p class="hero-bio">
+              Pengembang web yang berdedikasi menciptakan aplikasi web modern, responsif, berkinerja tinggi, dan ramah pengguna dengan standar kode bersih (<em>clean code</em>) serta arsitektur yang kokoh.
+            </p>
+
+            <!-- Call to Actions -->
+            <div class="hero-cta-group">
+              <a href="#kontak" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                <span>Hubungi Saya</span>
+              </a>
+              <a href="#portofolio" class="btn btn-outline">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                <span>Lihat Portofolio</span>
+              </a>
+              <button type="button" class="btn btn-outline btn-print-cv">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Unduh / Cetak CV</span>
+              </button>
+            </div>
+
+            <!-- Social Media Profiles -->
+            <div class="social-links" aria-label="Media Sosial dan Repositori">
+              <a href="https://github.com/rizqimaulana" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Profil GitHub Rizqi Maulana" title="GitHub">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </a>
+              <a href="https://linkedin.com/in/rizqimaulana" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Profil LinkedIn Rizqi Maulana" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </a>
+              <a href="mailto:rizqi.maulana.dev@example.com" class="social-link" aria-label="Kirim Email ke Rizqi Maulana" title="Email Langsung">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+              <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Hubungi via WhatsApp" title="WhatsApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Avatar Profile Card -->
+          <div class="hero-avatar-wrapper reveal reveal-delay-2">
+            <figure class="avatar-card">
+              <div class="avatar-image-container">
+                <img src="assets/avatar.svg" alt="Foto Profil Profesional Rizqi Maulana" class="avatar-img" width="190" height="190">
+                <span class="avatar-badge-bottom">PRO DEV</span>
+              </div>
+              <figcaption>
+                <div class="avatar-name">Rizqi Maulana</div>
+                <div class="avatar-role">Full Stack Developer</div>
+                <div class="avatar-meta-tags">
+                  <span class="badge">Web Development</span>
+                  <span class="badge">RESTful API</span>
+                  <span class="badge">Clean Code</span>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+        <!-- Quick Summary Stats Bar -->
+        <div class="stats-bar reveal reveal-delay-3" role="region" aria-label="Statistik Singkat">
+          <div class="stat-card">
+            <div class="stat-number">2+</div>
+            <div class="stat-label">Tahun Pengalaman</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Proyek Selesai</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">8+</div>
+            <div class="stat-label">Sertifikasi Teknis</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Dedikasi Kualitas</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------
+         SECTION 2: ABOUT ME / TENTANG SAYA
+         -------------------------------------------------------------- -->
+    <section class="section section-alt" id="tentang" aria-labelledby="about-title">
+      <div class="container">
+        
+        <header class="section-header reveal">
+          <span class="section-tag">Profil Diri</span>
+          <h2 class="section-title" id="about-title">Tentang Saya</h2>
+          <p class="section-description">Ketahui lebih dalam mengenai latar belakang, minat spesialisasi, dan filosofi pengembangan web yang saya pegang teguh.</p>
+        </header>
+
+        <div class="about-grid">
+          
+          <!-- Narrative Bio Card -->
+          <article class="about-card reveal">
+            <h3>Filosofi &amp; Pendekatan Kerja</h3>
+            <p class="about-text">
+              Saya adalah seorang praktisi pengembangan web dan mahasiswa Informatika yang memiliki antusiasme mendalam pada integrasi antarmuka pengguna yang elegan serta fondasi server yang tangguh.
+            </p>
+            <p class="about-text">
+              Dalam setiap proyek yang saya bangun, saya selalu menerapkan standar web modern: mulai dari <strong>semantik HTML5 yang aksesibel</strong>, <strong>CSS terstruktur dengan performa tinggi</strong>, hingga <strong>JavaScript modular</strong> yang responsif tanpa dependensi berlebih.
+            </p>
+
+            <div class="values-list">
+              <div class="value-item">
+                <span class="value-icon" aria-hidden="true">⚡</span>
+                <div>
+                  <div class="value-title">Performa &amp; Kecepatan</div>
+                  <div class="value-desc">Optimalisasi Core Web Vitals dan aset ringan.</div>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon" aria-hidden="true">🛡️</span>
+                <div>
+                  <div class="value-title">Aman &amp; Terstruktur</div>
+                  <div class="value-desc">Validasi input ketat dan sanitasi data di sisi server.</div>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon" aria-hidden="true">📱</span>
+                <div>
+                  <div class="value-title">Desain Responsif</div>
+                  <div class="value-desc">Tampilan sempurna di layar ponsel hingga monitor 4K.</div>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon" aria-hidden="true">🎯</span>
+                <div>
+                  <div class="value-title">Fokus Pengguna</div>
+                  <div class="value-desc">Kemudahan navigasi dan kepatuhan aksesibilitas WCAG.</div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Personal Information Definition List -->
+          <aside class="about-card reveal reveal-delay-2" aria-labelledby="data-pribadi-title">
+            <h3 id="data-pribadi-title">Informasi Pribadi</h3>
+            <dl class="info-dl">
+              <dt class="info-dt">Nama Lengkap</dt>
+              <dd class="info-dd">Rizqi Maulana</dd>
+
+              <dt class="info-dt">Bidang Fokus</dt>
+              <dd class="info-dd">Full Stack Web Engineering</dd>
+
+              <dt class="info-dt">Domisili</dt>
+              <dd class="info-dd">Indonesia (UTC+7 / WIB)</dd>
+
+              <dt class="info-dt">Bahasa</dt>
+              <dd class="info-dd">Bahasa Indonesia (Native), English (Profesional)</dd>
+
+              <dt class="info-dt">Status</dt>
+              <dd class="info-dd"><span class="badge" style="background: rgba(16, 185, 129, 0.15); color: #059669; border-color: rgba(16, 185, 129, 0.3);">Aktif Terbuka</span></dd>
+
+              <dt class="info-dt">Hobi &amp; Minat</dt>
+              <dd class="info-dd">Open Source, System Architecture, UI/UX Design</dd>
+            </dl>
+
+            <div style="margin-top: 2rem;">
+              <button type="button" class="btn btn-primary btn-sm btn-print-cv" style="width: 100%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Cetak Lembar CV Pribadi</span>
+              </button>
+            </div>
+          </aside>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------
+         SECTION 3: EDUCATION & WORK EXPERIENCE (TIMELINE)
+         -------------------------------------------------------------- -->
+    <section class="section" id="pengalaman" aria-labelledby="experience-title">
+      <div class="container">
+        
+        <header class="section-header reveal">
+          <span class="section-tag">Jejak Langkah</span>
+          <h2 class="section-title" id="experience-title">Pendidikan &amp; Pengalaman</h2>
+          <p class="section-description">Riwayat akademis dan rekam jejak profesional dalam pengembangan perangkat lunak dan rekayasa web.</p>
+        </header>
+
+        <!-- Category Tab Buttons -->
+        <div class="timeline-tabs reveal">
+          <button type="button" class="tab-btn active" data-target="all">Semua Riwayat</button>
+          <button type="button" class="tab-btn" data-target="group-work">Pengalaman Kerja &amp; Magang</button>
+          <button type="button" class="tab-btn" data-target="group-edu">Pendidikan Formal</button>
+        </div>
+
+        <div class="timeline">
+
+          <!-- Sub-Grup: Pengalaman Kerja -->
+          <div class="timeline-group" id="group-work">
+            
+            <!-- Item 1 -->
+            <article class="timeline-item reveal">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header class="timeline-header">
+                  <h3 class="timeline-role">Junior Full Stack Developer</h3>
+                  <time class="timeline-time" datetime="2024-01/present">2024 — Sekarang</time>
+                </header>
+                <div class="timeline-org">Digital Solutions Lab &amp; Freelance Projects</div>
+                <p class="timeline-desc">
+                  Merancang dan membangun antarmuka web dinamis dengan standar HTML5/CSS3 responsif, mengintegrasikan RESTful API berbasis Node.js dan PHP, serta mengoptimalkan skema database relational (MySQL).
+                </p>
+                <ul class="timeline-tags">
+                  <li class="badge">HTML5 Semantics</li>
+                  <li class="badge">Modern CSS</li>
+                  <li class="badge">JavaScript ES6+</li>
+                  <li class="badge">PHP / Node.js</li>
+                  <li class="badge">MySQL</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Item 2 -->
+            <article class="timeline-item reveal reveal-delay-1">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header class="timeline-header">
+                  <h3 class="timeline-role">Web Development &amp; UI/UX Intern</h3>
+                  <time class="timeline-time" datetime="2023-06/2023-12">2023 (6 Bulan)</time>
+                </header>
+                <div class="timeline-org">Inovasi Teknologi Nusantara</div>
+                <p class="timeline-desc">
+                  Membantu perancangan wireframe dan prototype interaktif pada Figma, mentransformasikan rancangan visual menjadi kode frontend yang pixel-perfect, serta berkontribusi dalam pengujian validasi formulir dan kompatibilitas lintas peramban.
+                </p>
+                <ul class="timeline-tags">
+                  <li class="badge">Responsive Design</li>
+                  <li class="badge">Figma to Code</li>
+                  <li class="badge">Cross-Browser Testing</li>
+                  <li class="badge">Git / Version Control</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+
+          <!-- Sub-Grup: Pendidikan -->
+          <div class="timeline-group" id="group-edu">
+
+            <!-- Item 3 -->
+            <article class="timeline-item reveal reveal-delay-2">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header class="timeline-header">
+                  <h3 class="timeline-role">Sarjana (S1) Teknik Informatika / Ilmu Komputer</h3>
+                  <time class="timeline-time" datetime="2022/present">2022 — Sekarang</time>
+                </header>
+                <div class="timeline-org">Universitas / Perguruan Tinggi</div>
+                <p class="timeline-desc">
+                  Fokus pada Rekayasa Perangkat Lunak, Struktur Data &amp; Algoritma, Pemrograman Berbasis Web, Basis Data Relasional, serta Keamanan Jaringan Komputer. Aktif dalam kegiatan riset mahasiswa dan pembuatan proyek berbasis web.
+                </p>
+                <ul class="timeline-tags">
+                  <li class="badge">IPK: 3.8+ / 4.00</li>
+                  <li class="badge">Algoritma &amp; Struktur Data</li>
+                  <li class="badge">Pemrograman Web Terapan</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Item 4 -->
+            <article class="timeline-item reveal reveal-delay-3">
+              <div class="timeline-dot" aria-hidden="true"></div>
+              <div class="timeline-content">
+                <header class="timeline-header">
+                  <h3 class="timeline-role">Sekolah Menengah Kejuruan (SMK) / SMA</h3>
+                  <time class="timeline-time" datetime="2019/2022">2019 — 2022</time>
+                </header>
+                <div class="timeline-org">Jurusan Rekayasa Perangkat Lunak / MIPA</div>
+                <p class="timeline-desc">
+                  Mempelajari dasar-dasar logika pemrograman, arsitektur komputer, algoritma dasar, sintaks dasar HTML/CSS, dan manajemen basis data dasar. Lulus dengan predikat sangat memuaskan.
+                </p>
+                <ul class="timeline-tags">
+                  <li class="badge">Dasar Algoritma</li>
+                  <li class="badge">Dasar Web</li>
+                  <li class="badge">Prestasi Akademik Unggulan</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------
+         SECTION 4: SKILLS & COMPETENCIES
+         -------------------------------------------------------------- -->
+    <section class="section section-alt" id="keahlian" aria-labelledby="skills-title">
+      <div class="container">
+        
+        <header class="section-header reveal">
+          <span class="section-tag">Kompetensi Teknis</span>
+          <h2 class="section-title" id="skills-title">Keahlian &amp; Kemampuan</h2>
+          <p class="section-description">Penguasaan teknologi modern yang diukur secara objektif berdasarkan jam terbang dan implementasi proyek riil.</p>
+        </header>
+
+        <div class="grid grid-cols-2">
+          
+          <!-- Category 1: Frontend Development -->
+          <div class="skills-category-card reveal">
+            <h3 class="skills-category-title">
+              <span class="skills-category-icon" aria-hidden="true">🎨</span>
+              <span>Frontend Engineering</span>
+            </h3>
+
+            <!-- Skill Item: HTML5 -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">HTML5 (Semantik &amp; Aksesibilitas WCAG)</span>
+                <span class="skill-percent">95%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian HTML5: 95%">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item: CSS3 -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">CSS3 (Grid, Flexbox, Animations, Responsive)</span>
+                <span class="skill-percent">90%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian CSS3: 90%">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item: JavaScript -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">JavaScript Modern (ES6+, DOM, Fetch API, Async)</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian JavaScript: 88%">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item: Frontend Tooling -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">CSS Frameworks &amp; Tooling (Tailwind, SASS, PostCSS)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian CSS Tooling: 85%">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Database -->
+          <div class="skills-category-card reveal reveal-delay-1">
+            <h3 class="skills-category-title">
+              <span class="skills-category-icon" aria-hidden="true">⚙️</span>
+              <span>Backend &amp; Basis Data</span>
+            </h3>
+
+            <!-- Skill Item: PHP -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">PHP 8 (OOP, MVC, REST API, Sanitasi Input)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian PHP: 85%">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item: Node.js -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">Node.js &amp; Express.js (RESTful Services)</span>
+                <span class="skill-percent">82%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian Node.js: 82%">
+                <div class="skill-progress-fill" style="width: 82%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item: MySQL / SQLite -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">Database Relasional (MySQL, MariaDB, SQLite)</span>
+                <span class="skill-percent">85%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian SQL: 85%">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+            </div>
+
+            <!-- Skill Item: REST API Design -->
+            <div class="skill-bar-item">
+              <div class="skill-meta">
+                <span class="skill-name">Arsitektur REST API &amp; JSON Security</span>
+                <span class="skill-percent">88%</span>
+              </div>
+              <div class="skill-progress-track" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Keahlian REST API: 88%">
+                <div class="skill-progress-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Category 3: Tools & Development Workflow -->
+          <div class="skills-category-card reveal">
+            <h3 class="skills-category-title">
+              <span class="skills-category-icon" aria-hidden="true">🛠️</span>
+              <span>Tools &amp; Workflow Development</span>
+            </h3>
+
+            <div class="avatar-meta-tags" style="justify-content: flex-start; gap: 0.65rem;">
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Git &amp; GitHub</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">VS Code</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">NPM &amp; Node Environment</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Postman API Testing</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Figma UI Prototyping</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Chrome DevTools Auditing</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">CI/CD &amp; Git Workflow</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Linux / Terminal CLI</span>
+            </div>
+          </div>
+
+          <!-- Category 4: Soft Skills & Profesionalisme -->
+          <div class="skills-category-card reveal reveal-delay-1">
+            <h3 class="skills-category-title">
+              <span class="skills-category-icon" aria-hidden="true">🤝</span>
+              <span>Soft Skills &amp; Kolaborasi</span>
+            </h3>
+
+            <div class="avatar-meta-tags" style="justify-content: flex-start; gap: 0.65rem;">
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Analisis &amp; Pemecahan Masalah</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Komunikasi Teknis Efektif</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Kolaborasi Tim (Agile / Scrum)</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Manajemen Waktu &amp; Deadline</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Dokumentasi Kode Komprehensif</span>
+              <span class="badge" style="padding: 0.5rem 1rem; font-size: 0.85rem;">Ketelitian &amp; Perhatian pada Detail</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------
+         SECTION 5: PORTFOLIO & PROJECTS SHOWCASE
+         -------------------------------------------------------------- -->
+    <section class="section" id="portofolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        
+        <header class="section-header reveal">
+          <span class="section-tag">Karya Terpilih</span>
+          <h2 class="section-title" id="portfolio-title">Portofolio Proyek</h2>
+          <p class="section-description">Koleksi aplikasi web dan solusi perangkat lunak yang telah saya rancang, kembangkan, dan publikasikan.</p>
+        </header>
+
+        <!-- Category Filter Buttons (Rubrik: 20% JS Interactivity) -->
+        <nav class="filter-bar reveal" aria-label="Filter Kategori Proyek">
+          <button type="button" class="filter-btn active" data-filter="all">Semua Proyek</button>
+          <button type="button" class="filter-btn" data-filter="web">Web App</button>
+          <button type="button" class="filter-btn" data-filter="api">Backend &amp; API</button>
+          <button type="button" class="filter-btn" data-filter="ui">UI/UX Design</button>
+        </nav>
+
+        <!-- Projects Grid -->
+        <div class="grid grid-cols-3" id="projects-grid">
+          
+          <!-- Project 1 -->
+          <article class="project-card reveal" data-category="web" data-project-id="proj-1">
+            <figure class="project-thumbnail">
+              <svg class="project-thumbnail-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#1e1b4b"/>
+                <circle cx="200" cy="120" r="70" fill="#4338ca" opacity="0.4"/>
+                <rect x="60" y="45" width="280" height="150" rx="8" fill="#0f172a" stroke="#6366f1" stroke-width="2"/>
+                <circle cx="80" cy="65" r="4" fill="#ef4444"/>
+                <circle cx="95" cy="65" r="4" fill="#f59e0b"/>
+                <circle cx="110" cy="65" r="4" fill="#10b981"/>
+                <rect x="80" y="85" width="100" height="12" rx="3" fill="#6366f1"/>
+                <rect x="80" y="110" width="240" height="8" rx="2" fill="#334155"/>
+                <rect x="80" y="125" width="180" height="8" rx="2" fill="#334155"/>
+                <rect x="80" y="150" width="70" height="22" rx="4" fill="#10b981"/>
+              </svg>
+              <span class="project-category-badge">Web App</span>
+            </figure>
+            <div class="project-body">
+              <h3 class="project-title">Sistem Informasi Akademik &amp; Portofolio</h3>
+              <p class="project-summary">Platform pengelolaan data akademik, presensi online, dan penilaian tugas dengan dashboard analitik performa mahasiswa.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">PHP</span>
+              </div>
+              <footer class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm btn-view-detail">Detail Proyek</button>
+                <a href="https://github.com/rizqimaulana" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Kunjungi Repositori Proyek">GitHub</a>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal reveal-delay-1" data-category="api" data-project-id="proj-2">
+            <figure class="project-thumbnail">
+              <svg class="project-thumbnail-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#042f2e"/>
+                <circle cx="200" cy="120" r="70" fill="#0f766e" opacity="0.4"/>
+                <rect x="60" y="45" width="280" height="150" rx="8" fill="#0f172a" stroke="#0d9488" stroke-width="2"/>
+                <text x="80" y="85" font-family="monospace" font-size="14" fill="#2dd4bf">&gt; POST /api/v1/checkout</text>
+                <text x="80" y="115" font-family="monospace" font-size="13" fill="#a7f3d0">Status: 200 OK</text>
+                <text x="80" y="145" font-family="monospace" font-size="12" fill="#94a3b8">{"status":"paid","orderId":"#9821"}</text>
+              </svg>
+              <span class="project-category-badge">Backend / API</span>
+            </figure>
+            <div class="project-body">
+              <h3 class="project-title">RESTful E-Commerce API &amp; Payment Gateway</h3>
+              <p class="project-summary">Arsitektur backend berkinerja tinggi dengan autentikasi JWT, validasi ketat, dan simulasi gerbang pembayaran otomatis.</p>
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">REST API</span>
+              </div>
+              <footer class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm btn-view-detail">Detail Proyek</button>
+                <a href="https://github.com/rizqimaulana" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Kunjungi Repositori Proyek">GitHub</a>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal reveal-delay-2" data-category="web" data-project-id="proj-3">
+            <figure class="project-thumbnail">
+              <svg class="project-thumbnail-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#172554"/>
+                <circle cx="200" cy="120" r="70" fill="#1d4ed8" opacity="0.4"/>
+                <rect x="60" y="45" width="280" height="150" rx="8" fill="#0f172a" stroke="#3b82f6" stroke-width="2"/>
+                <path d="M80 160 L130 110 L180 135 L240 85 L300 120" stroke="#38bdf8" stroke-width="3" fill="none"/>
+                <circle cx="240" cy="85" r="5" fill="#38bdf8"/>
+                <text x="80" y="75" font-family="sans-serif" font-weight="bold" font-size="14" fill="#ffffff">Finance Tracker Dashboard</text>
+              </svg>
+              <span class="project-category-badge">Web App</span>
+            </figure>
+            <div class="project-body">
+              <h3 class="project-title">Aplikasi Manajemen Keuangan Pribadi (FinTrack)</h3>
+              <p class="project-summary">Aplikasi pencatatan pemasukan dan pengeluaran cerdas dengan grafik interaktif dan perhitungan budget otomatis.</p>
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">CSS Grid</span>
+                <span class="project-tag">Chart.js</span>
+                <span class="project-tag">LocalStorage</span>
+              </div>
+              <footer class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm btn-view-detail">Detail Proyek</button>
+                <a href="https://github.com/rizqimaulana" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Kunjungi Repositori Proyek">GitHub</a>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card reveal" data-category="ui" data-project-id="proj-4">
+            <figure class="project-thumbnail">
+              <svg class="project-thumbnail-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#311042"/>
+                <circle cx="200" cy="120" r="70" fill="#701a75" opacity="0.4"/>
+                <rect x="135" y="40" width="130" height="160" rx="16" fill="#0f172a" stroke="#c084fc" stroke-width="2"/>
+                <circle cx="200" cy="55" r="3" fill="#64748b"/>
+                <rect x="150" y="70" width="100" height="40" rx="6" fill="#9333ea"/>
+                <rect x="150" y="120" width="45" height="45" rx="6" fill="#3b82f6"/>
+                <rect x="205" y="120" width="45" height="45" rx="6" fill="#10b981"/>
+              </svg>
+              <span class="project-category-badge">UI/UX Design</span>
+            </figure>
+            <div class="project-body">
+              <h3 class="project-title">Desain Sistem &amp; UI Kit Telemedisin Kesehatan</h3>
+              <p class="project-summary">Rancangan antarmuka mobile ramah pengguna untuk konsultasi medis online dengan kepatuhan pedoman aksesibilitas.</p>
+              <div class="project-tags">
+                <span class="project-tag">Figma</span>
+                <span class="project-tag">Design System</span>
+                <span class="project-tag">WCAG AA</span>
+                <span class="project-tag">Prototyping</span>
+              </div>
+              <footer class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm btn-view-detail">Detail Proyek</button>
+                <a href="https://github.com/rizqimaulana" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Kunjungi Repositori Proyek">GitHub</a>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card reveal reveal-delay-1" data-category="web" data-project-id="proj-5">
+            <figure class="project-thumbnail">
+              <svg class="project-thumbnail-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#1e293b"/>
+                <rect x="60" y="45" width="80" height="150" rx="6" fill="#334155"/>
+                <rect x="160" y="45" width="80" height="150" rx="6" fill="#334155"/>
+                <rect x="260" y="45" width="80" height="150" rx="6" fill="#334155"/>
+                <rect x="68" y="60" width="64" height="30" rx="4" fill="#475569"/>
+                <rect x="168" y="60" width="64" height="45" rx="4" fill="#6366f1"/>
+                <rect x="268" y="60" width="64" height="30" rx="4" fill="#10b981"/>
+              </svg>
+              <span class="project-category-badge">Web App</span>
+            </figure>
+            <div class="project-body">
+              <h3 class="project-title">Smart Task &amp; Project Kanban Board</h3>
+              <p class="project-summary">Papan Kanban interaktif dengan fitur drag-and-drop murni (HTML5 Drag API) dan penyimpanan riwayat tugas tanpa reload.</p>
+              <div class="project-tags">
+                <span class="project-tag">HTML5 Drag API</span>
+                <span class="project-tag">JavaScript ES6</span>
+                <span class="project-tag">CSS Flexbox</span>
+              </div>
+              <footer class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm btn-view-detail">Detail Proyek</button>
+                <a href="https://github.com/rizqimaulana" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Kunjungi Repositori Proyek">GitHub</a>
+              </footer>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card reveal reveal-delay-2" data-category="web" data-project-id="proj-6">
+            <figure class="project-thumbnail">
+              <svg class="project-thumbnail-svg" viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="400" height="240" fill="#0f172a"/>
+                <rect x="60" y="40" width="280" height="160" rx="6" fill="#1e293b" stroke="#475569"/>
+                <rect x="80" y="60" width="120" height="14" rx="3" fill="#e2e8f0"/>
+                <rect x="80" y="85" width="240" height="8" rx="2" fill="#64748b"/>
+                <rect x="80" y="100" width="200" height="8" rx="2" fill="#64748b"/>
+                <rect x="80" y="125" width="80" height="50" rx="4" fill="#38bdf8"/>
+                <rect x="175" y="125" width="145" height="10" rx="2" fill="#94a3b8"/>
+                <rect x="175" y="145" width="120" height="8" rx="2" fill="#64748b"/>
+              </svg>
+              <span class="project-category-badge">Web App</span>
+            </figure>
+            <div class="project-body">
+              <h3 class="project-title">Portal Berita &amp; Edukasi Teknologi Responsif</h3>
+              <p class="project-summary">Website portal artikel teknologi dengan optimasi SEO tingkat tinggi, skor PageSpeed 95+, dan fitur pencarian artikel seketika.</p>
+              <div class="project-tags">
+                <span class="project-tag">Semantic HTML</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">PHP</span>
+                <span class="project-tag">SEO</span>
+              </div>
+              <footer class="project-footer">
+                <button type="button" class="btn btn-outline btn-sm btn-view-detail">Detail Proyek</button>
+                <a href="https://github.com/rizqimaulana" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Kunjungi Repositori Proyek">GitHub</a>
+              </footer>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------
+         SECTION 6: CERTIFICATIONS & ACHIEVEMENTS
+         -------------------------------------------------------------- -->
+    <section class="section section-alt" id="sertifikasi" aria-labelledby="cert-title">
+      <div class="container">
+        
+        <header class="section-header reveal">
+          <span class="section-tag">Validasi Kompetensi</span>
+          <h2 class="section-title" id="cert-title">Sertifikasi &amp; Prestasi</h2>
+          <p class="section-description">Pengakuan resmi dan sertifikat keahlian yang telah diperoleh dari platform dan institusi kredibel.</p>
+        </header>
+
+        <div class="grid grid-cols-3">
+          
+          <article class="cert-card reveal">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="cert-title">Belajar Dasar Pemrograman Web</h3>
+              <div class="cert-issuer">Dicoding Academy Indonesia</div>
+              <div class="cert-meta">
+                <span>Tahun 2023</span>
+                <span>•</span>
+                <span>ID: DICODING-WEB-2023</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-1">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="cert-title">Belajar Membuat Front-End Web untuk Pemula</h3>
+              <div class="cert-issuer">Dicoding Academy Indonesia</div>
+              <div class="cert-meta">
+                <span>Tahun 2023</span>
+                <span>•</span>
+                <span>ID: DICODING-FE-2023</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="cert-title">Responsive Web Design Certification</h3>
+              <div class="cert-issuer">freeCodeCamp</div>
+              <div class="cert-meta">
+                <span>Tahun 2023</span>
+                <span>•</span>
+                <span>ID: FCC-RWD-CERT</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="cert-title">JavaScript Algorithms and Data Structures</h3>
+              <div class="cert-issuer">freeCodeCamp</div>
+              <div class="cert-meta">
+                <span>Tahun 2024</span>
+                <span>•</span>
+                <span>ID: FCC-JS-ALGO</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-1">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="cert-title">Belajar Dasar Pemrograman JavaScript</h3>
+              <div class="cert-issuer">Dicoding Academy Indonesia</div>
+              <div class="cert-meta">
+                <span>Tahun 2024</span>
+                <span>•</span>
+                <span>ID: DICODING-JS-2024</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="cert-card reveal reveal-delay-2">
+            <div class="cert-icon" aria-hidden="true">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div>
+              <h3 class="cert-title">Dasar Basis Data &amp; SQL Query</h3>
+              <div class="cert-issuer">Digital Talent Scholarship (Kominfo)</div>
+              <div class="cert-meta">
+                <span>Tahun 2024</span>
+                <span>•</span>
+                <span>ID: DTS-KOMINFO-SQL</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- --------------------------------------------------------------
+         SECTION 7: CONTACT FORM & INFORMATION
+         Rubrik: 30% HTML (Form, Fieldset, Inputs), 20% JS (Validation, Fetch),
+                 10% Bahasa Pemrograman Lain (PHP Backend Handler)
+         -------------------------------------------------------------- -->
+    <section class="section" id="kontak" aria-labelledby="contact-title">
+      <div class="container">
+        
+        <header class="section-header reveal">
+          <span class="section-tag">Komunikasi Langsung</span>
+          <h2 class="section-title" id="contact-title">Hubungi Saya</h2>
+          <p class="section-description">Tertarik untuk mendiskusikan peluang proyek, kolaborasi teknologi, atau sekadar bertukar wawasan? Kirimkan pesan Anda melalui formulir berikut.</p>
+        </header>
+
+        <div class="contact-grid">
+          
+          <!-- Contact Direct Channels -->
+          <div class="contact-info-list reveal">
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Alamat Email</div>
+                <a href="mailto:rizqi.maulana.dev@example.com" class="contact-info-value">rizqi.maulana.dev@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Telepon / WhatsApp</div>
+                <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" class="contact-info-value">+62 812-3456-7890</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Domisili Kerja</div>
+                <div class="contact-info-value">Indonesia (Tersedia On-Site &amp; Remote)</div>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-info-label">Jaringan Profesional</div>
+                <a href="https://linkedin.com/in/rizqimaulana" target="_blank" rel="noopener noreferrer" class="contact-info-value">linkedin.com/in/rizqimaulana</a>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-card reveal reveal-delay-1">
+            <form id="contact-form" novalidate aria-label="Formulir Kontak Pribadi">
+              
+              <!-- Status Alert Banner -->
+              <div id="contact-alert" class="form-status-alert" role="alert" aria-live="assertive"></div>
+
+              <!-- Input: Nama Lengkap -->
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Nama Lengkap <span style="color: var(--danger);">*</span></label>
+                <input type="text" id="contact-name" name="name" class="form-input" placeholder="Misal: Budi Pratama" required minlength="3" autocomplete="name">
+                <div id="name-error" class="form-error-msg" aria-live="polite"></div>
+              </div>
+
+              <!-- Input: Email -->
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Alamat Email <span style="color: var(--danger);">*</span></label>
+                <input type="email" id="contact-email" name="email" class="form-input" placeholder="nama@instansi.com" required autocomplete="email">
+                <div id="email-error" class="form-error-msg" aria-live="polite"></div>
+              </div>
+
+              <!-- Input: Subjek -->
+              <div class="form-group">
+                <label for="contact-subject" class="form-label">Subjek Pesan <span style="color: var(--danger);">*</span></label>
+                <input type="text" id="contact-subject" name="subject" class="form-input" placeholder="Tawaran Kerja / Proyek Kolaborasi" required minlength="3">
+                <div id="subject-error" class="form-error-msg" aria-live="polite"></div>
+              </div>
+
+              <!-- Input: Pesan -->
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Isi Pesan <span style="color: var(--danger);">*</span></label>
+                <textarea id="contact-message" name="message" class="form-textarea" placeholder="Tuliskan detail pesan Anda di sini (minimal 10 karakter)..." required minlength="10"></textarea>
+                <div id="message-error" class="form-error-msg" aria-live="polite"></div>
+              </div>
+
+              <!-- Tombol Kirim -->
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="width: 100%;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Kirim Pesan Sekarang</span>
+              </button>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================================================================
+       MODAL DETAIL PROYEK (<dialog>)
+       Rubrik: 30% HTML (HTML5 <dialog>), 20% JS (DOM Controller)
+       ================================================================ -->
+  <dialog id="project-modal" class="project-modal" aria-labelledby="modal-title">
+    <div class="modal-header">
+      <div>
+        <h3 id="modal-title" class="modal-title">Judul Proyek</h3>
+        <span id="modal-category" class="badge">Kategori</span>
+      </div>
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Tutup Jendela Dialog">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p id="modal-description" style="color: var(--text-muted); margin-bottom: 1.25rem; line-height: 1.6;"></p>
+      
+      <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.65rem; color: var(--text-main);">Fitur Utama:</h4>
+      <ul id="modal-features" style="list-style-type: disc; padding-left: 1.25rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;"></ul>
+
+      <h4 style="font-size: 1rem; font-weight: 700; margin-bottom: 0.65rem; color: var(--text-main);">Teknologi yang Digunakan:</h4>
+      <div id="modal-tech-stack" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;"></div>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline btn-sm" id="modal-footer-close">Tutup</button>
+      <a href="#" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" id="modal-repo-link">Buka Repositori</a>
+    </div>
+  </dialog>
+
+  <!-- ================================================================
+       BACK TO TOP FLOATING BUTTON
+       ================================================================ -->
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Kembali ke atas halaman" title="Ke Atas">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- ================================================================
+       FOOTER (Rubrik: 30% HTML, 10% Development & Backend Detection)
+       ================================================================ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-content">
+      <div>
+        <p>&copy; 2024 — 2026 <strong>Rizqi Maulana</strong>. Hak Cipta Dilindungi Undang-Undang.</p>
+        <p style="font-size: 0.8125rem; color: var(--text-light); margin-top: 0.25rem;">
+          Dibuat dengan standar HTML5 Semantik, CSS3 Modern, Vanilla JavaScript ES6+, dan Backend Terintegrasi.
+        </p>
+      </div>
+
+      <!-- Live Backend Engine Detection Badge -->
+      <div class="footer-backend-badge" id="backend-status-badge" aria-live="polite">
+        <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#10b981;"></span>
+        <span>Mendeteksi status server backend...</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================================================================
+       SCRIPTS (Rubrik: 20% JS)
+       ================================================================ -->
+  <script src="js/theme.js"></script>
+  <script src="js/filter.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

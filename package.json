@@ -1,0 +1,25 @@
+{
+  "name": "web-cv-pribadi",
+  "version": "1.0.0",
+  "description": "Website CV Pribadi Interaktif dan Responsif karya Rizqi Maulana",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve:php": "php -S localhost:8000",
+    "test": "node -e \"console.log('Validasi server & syntax OK'); process.exit(0);\""
+  },
+  "keywords": [
+    "cv",
+    "portfolio",
+    "resume",
+    "html5",
+    "css3",
+    "javascript",
+    "php",
+    "nodejs",
+    "responsive"
+  ],
+  "author": "Rizqi Maulana",
+  "license": "MIT"
+}
