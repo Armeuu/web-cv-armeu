@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Website CV Pribadi Interaktif dan Responsif karya Ahmad Rizqi Maulana (Informatika UMM)",
   "scripts": {
-    "build": "echo 'Static Site Ready'",
     "start": "node local-server.js",
     "dev": "node local-server.js",
     "serve:php": "php -S localhost:8000",
