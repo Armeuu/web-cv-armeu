@@ -115,12 +115,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       // Tentukan endpoint backend sesuai environment (Vercel, Node.js, atau PHP)
-      let endpoint = '/api/contact';
+      let endpoint = '/api/contact.js';
       if (window.location.protocol === 'file:') {
         throw new Error('OFFLINE_MODE');
       }
       if (window.location.port === '8000' || window.location.pathname.endsWith('.php')) {
         endpoint = 'api/contact.php';
+      }
+      if (window.location.port === '3000') {
+        endpoint = '/api/contact';
       }
 
       let response;

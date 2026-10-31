@@ -174,7 +174,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Coba deteksi Vercel Serverless, Node.js, atau PHP
     const endpoints = [
-      { url: '/api/contact', name: 'Cloud Serverless / Node.js Backend' },
+      { url: '/api/contact.js', name: 'Vercel Serverless Cloud' },
+      { url: '/api/contact', name: 'Node.js Backend' },
       { url: 'api/contact.php', name: 'PHP 8.1 Backend' }
     ];
 
